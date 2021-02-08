@@ -217,11 +217,16 @@ a:hover {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  padding: 30px 10px 38px 10px;
+  padding: 30px 10px 38px 13px;
   overflow: hidden;
-  background-image: url('/img/logo-white@3x.png');
-  background-repeat: no-repeat;
-  background-position: right top;
+  position: relative;
+}
+
+.link-bct {
+  position: absolute;
+  overflow: hidden;
+  right: 8%;
+  bottom: 70%;
 }
 
 .footer-last-cap {
@@ -255,5 +260,9 @@ a:hover {
     justify-content: flex-start;
     bottom: 5px;
     left: 20px;
+  }
+
+  .footer {
+    display: none;
   }
 }
