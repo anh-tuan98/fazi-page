@@ -116,45 +116,126 @@ ul.list li a:hover {
 }
 
 /* main */
-
-.map {
-  padding-top: 60px;
+.news-total {
+  overflow: hidden;
+  padding-top: "40px";
   padding-bottom: 80px;
+  border-bottom: solid 1px #e7e7e7;
 }
 
-.map-container {
-  position: relative;
-}
-
-.address {
-  position: absolute;
-  right: 2%;
-  bottom: 13%;
-  background-color: #ffffff;
-  width: 60%;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.icon-map {
-  height: 16px;
-  margin-right: 10px;
-}
-
-.title-map {
-  margin: 0;
-}
-
-/* detail */
-.detail {
-  margin: auto;
-  max-width: 850px;
+.news-theme {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #019851;
   padding-top: 80px;
 }
 
-.name-store {
+.news-title {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #adb6b0;
+  padding-top: 20px;
+}
+
+.img-news-detail {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.title-news {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #484848;
+}
+
+.img-title {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7d817e;
+  padding-top: 20px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-last {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: start;
+  color: #484848;
+  padding-top: 40px;
+}
+
+/* new-other */
+.news-other {
+    padding-bottom: 50px;
+}
+
+.news-other-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: center;
+  color: #484848;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.news-other-title::before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #019851;
+  position: absolute;
+  top: 110px;
+  left: 48%;
+}
+
+.link-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-post {
+  max-width: 317px;
+  height: 237.8px;
+  padding-bottom: 20px;
+}
+
+.img-post:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.title-post {
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -164,64 +245,14 @@ ul.list li a:hover {
   color: #019851;
 }
 
-.address-store {
-  font-size: 16px;
+.time-post {
+  font-size: 14px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.69;
-  letter-spacing: normal;
-  color: #484848;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-title {
-  font-size: 18px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #484848;
-  padding-bottom: 45px;
-}
-
-.contact-title::before {
-  content: "";
-  position: absolute;
-  top: 35px;
-  width: 50px;
-  height: 5px;
-  background-color: #019851;
-}
-
-.contact-input {
-  border: 1px solid #bcbec0;
-  color: #231f20;
-}
-
-.btn-contact {
-  border-radius: 3px;
-  background-color: #019851;
-  font-size: 16px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  border: none;
-  padding: 15px;
-}
-
-.boder-title {
-  padding-top: 40px;
-  border-top: 1px solid #e7e7e7;
+  color: #adb6b0;
 }
 
 /* footer */
@@ -285,7 +316,6 @@ ul.list li a:hover {
   letter-spacing: normal;
 }
 
-/* reponse */
 @media (max-width: 992px) {
   .nav {
     flex-direction: column;
@@ -294,10 +324,6 @@ ul.list li a:hover {
 }
 
 @media (max-width: 576px) {
-  .address {
-    width: 100%;
-  }
-
   .carousel-caption {
     padding: 0;
   }
@@ -310,5 +336,13 @@ ul.list li a:hover {
 
   .footer {
     display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .total-title {
+    margin: auto;
   }
 }
