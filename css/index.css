@@ -257,6 +257,12 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
+  .link-bct {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 45%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -272,5 +278,12 @@ a:hover {
 
   .footer {
     display: none;
+  }
+
+  .link-bct {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 40%;
   }
 }

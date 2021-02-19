@@ -192,7 +192,7 @@ ul.list li a:hover {
 
 /* new-other */
 .news-other {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .news-other-title {
@@ -321,6 +321,12 @@ ul.list li a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
+  .link-bct {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 45%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -344,5 +350,12 @@ ul.list li a:hover {
 
   .total-title {
     margin: auto;
+  }
+
+  .link-bct {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 40%;
   }
 }
