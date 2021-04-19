@@ -3,6 +3,9 @@
   src: url(../font/FontsFree-Net-AvertaStandard-Regular.ttf);
   font-family: AvertaStdCY;
 }
+li {
+  list-style: none;
+}
 
 body {
   font-family: AvertaStdCY;
@@ -48,6 +51,53 @@ a:hover {
   color: #484848;
   border-bottom: 3px solid transparent;
   border-radius: 0;
+}
+
+.menu-dropdown {
+  min-width: 95px;
+  padding: 0px;
+  position: absolute;
+  background: #ffffff;
+  z-index: 100;
+  text-align: center;
+}
+
+.menu-dropdown::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  transition: "0.5s border-top";
+}
+
+.nav-item:not(:hover) > .menu-dropdown {
+  padding: 4px 0;
+  /* background: #dddddd; */
+  z-index: 99;
+}
+
+.nav-item:not(:hover) > .menu-dropdown:after {
+  border-top-color: #dddddd;
+}
+
+.nav-item:not(:hover) > .menu-title:after {
+  border-bottom-color: #dddddd;
+}
+
+.nav-item:not(:hover) > .menu-dropdown > * {
+  visibility: hidden;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: rgba(25, 25, 25, 0);
+  z-index: 99;
+}
+
+.nav-item__dropdown:hover {
+  background-color: #dddddd;
 }
 
 .nav-item .nav-link:hover {
