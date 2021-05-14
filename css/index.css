@@ -6,7 +6,9 @@
 li {
   list-style: none;
 }
-
+.nav-item__dropdown {
+  text-align: left;
+}
 body {
   font-family: AvertaStdCY;
 }
