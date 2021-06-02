@@ -26,6 +26,14 @@ a {
 #tainguyen h2{
 	text-align: center;
 	font-size: 19px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+}
+#tainguyen img{width:60%;}
+area:hover{
+	background: #ff0000;
+	width: 1000px;
+	height: 500px;
 }
 h1, h2, h3, h4, h5 {
   color: #000;
@@ -339,7 +347,7 @@ textarea.form-control {
   padding: 0; }
 
 .testimonial .author-image img {
-  width: 300px; }
+  width: 60%; }
 
 .post .media-custom {
   background: #fff;
@@ -1027,6 +1035,7 @@ textarea.form-control {
 .room {
   position: relative;
   display: block;
+	cursor: auto;
 }
   .room .img-wrap {
     position: relative;
@@ -1034,18 +1043,7 @@ textarea.form-control {
 	width:60%;
 	  margin: auto;
 }
-    .room .img-wrap img {
-      -webkit-transition: .3s all ease-in-out;
-      -o-transition: .3s all ease-in-out;
-      transition: .3s all ease-in-out;
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      margin-bottom: 0 !important; }
-  .room:hover .img-wrap img, .room:focus .img-wrap img {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); }
+    
 
 .letter-spacing-1 {
   letter-spacing: .1em; }

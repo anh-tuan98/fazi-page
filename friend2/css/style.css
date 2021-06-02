@@ -110,7 +110,10 @@ h1, h2, h3, h4, h5 {
   box-shadow: none !important; }
   .btn:focus, .btn:active, .form-control:focus, .form-control:active {
     outline: none; }
-
+.btn-danger{
+	background: #EF5BA1;
+	border-radius: 10px;
+}
 .form-control {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -1048,6 +1051,7 @@ line-height: 39px;
 .room {
   position: relative;
   display: block;
+	cursor: alias;
 }
   .room .img-wrap1 {
     position: relative;
@@ -1064,18 +1068,6 @@ line-height: 39px;
 	width:70%;
 	  margin: auto;
 }
-    .room .img-wrap img {
-      -webkit-transition: .3s all ease-in-out;
-      -o-transition: .3s all ease-in-out;
-      transition: .3s all ease-in-out;
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      margin-bottom: 0 !important; }
-  .room:hover .img-wrap img, .room:focus .img-wrap img {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); }
 
 .letter-spacing-1 {
   letter-spacing: .1em; }
