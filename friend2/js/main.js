@@ -15,7 +15,7 @@
     }
   });
 
-	
+
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		$this.addClass('show');
@@ -96,7 +96,7 @@
 	var major2Carousel = $('.js-carousel-2');
 	major2Carousel.owlCarousel({
     loop:true,
-    autoplay: true,
+    autoplay: false,
     stagePadding: 7,
     margin: 20,
     // animateOut: 'fadeOut',
@@ -181,13 +181,13 @@
   var goToTop = function() {
 
     $('.js-gotop').on('click', function(event){
-      
+
       event.preventDefault();
 
       $('html, body').animate({
         scrollTop: $('html').offset().top
       }, 500, 'easeInOutExpo');
-      
+
       return false;
     });
 
@@ -201,14 +201,14 @@
       }
 
     });
-  
+
   };
 
   $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
     console.log('scrolling');
   });
 
-  
+
   // navigation
   var OnePageNav = function() {
     var navToggler = $('.site-menu-toggle');
@@ -216,7 +216,7 @@
     $("#templateux-navbar .navbar-nav li a[href^='#'], .smoothscroll[href^='#']").on('click', function(e) {
       e.preventDefault();
       var hash = this.hash;
-      
+
       // navToggler.trigger('click');
 
       // setTimeout(function(){
@@ -226,11 +226,11 @@
         }, 400, 'easeInOutExpo', function(){
           window.location.hash = hash;
         });
-        
-      // }, 500);
-      
 
-      
+      // }, 500);
+
+
+
 
     });
 
@@ -253,29 +253,29 @@
       var $w = $(this),
           st = $w.scrollTop(),
           navbar = $('.pb_navbar'),
-          sd = $('.js-scroll-wrap'), 
+          sd = $('.js-scroll-wrap'),
           toggle = $('.site-menu-toggle');
 
       if ( toggle.hasClass('open') ) {
         $('.site-menu-toggle').trigger('click');
       }
-      
+
 
       if (st > 150) {
         if ( !navbar.hasClass('scrolled') ) {
-          navbar.addClass('scrolled');  
+          navbar.addClass('scrolled');
         }
-      } 
+      }
       if (st < 150) {
         if ( navbar.hasClass('scrolled') ) {
           navbar.removeClass('scrolled sleep');
         }
-      } 
+      }
       if ( st > 350 ) {
         if ( !navbar.hasClass('awake') ) {
-          navbar.addClass('awake'); 
+          navbar.addClass('awake');
         }
-        
+
         if(sd.length > 0) {
           sd.addClass('sleep');
         }

@@ -35,7 +35,7 @@ a {
 	color:#EF5BA1;
 }
 .banner{
-	
+
 }
 .cautruc{
 	padding-bottom: 20px;
@@ -704,7 +704,7 @@ line-height: 39px;
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
   font-size: 24px;
   margin-bottom: 5px; }
- 
+
 .post-categories li {
   display: block; }
   .post-categories li a {
@@ -1364,7 +1364,7 @@ line-height: 39px;
 			color: #000 !important; }
         .pb_navbar.scrolled.pb_scrolled-light ul li.active {
 			color: #000 !important;
-			
+
 }
       .pb_navbar.scrolled.pb_scrolled-light ul li.cta-btn > a > span {
         border: none;
@@ -1426,4 +1426,7 @@ line-height: 39px;
 	font-weight: 500;
 	padding: 0;
 	margin: 0;
+}
+.font-15 {
+  font-size: 15px;
 }
