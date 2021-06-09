@@ -1399,3 +1399,15 @@ textarea.form-control {
   padding: 10px;
   margin-bottom: 20px;
 }
+
+.font-15 {
+  font-size: 15px;
+}
+figure img {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
